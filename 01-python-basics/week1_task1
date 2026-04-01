@@ -1,0 +1,67 @@
+#字符串
+print('I\'m okay')
+print('I\'m learning \nPython')
+print ('\\\n\\')
+print('\\\t\\')
+print(r'\\\t\\')
+print('''line1
+line2
+line3''')
+print(r'''Hello, \n
+world''')
+
+#布尔值（常用于条件判断中）
+age =19
+if age >=18:
+    print ('adult')
+else:
+    print('teenager')
+
+#格式化
+print('%.2f' % 3.1415926)
+print('%21d-%021d' % (3,1))
+'Hello, {0}, 成绩提升了 {1:.1f}%，非常{2}'.format('小明', 17.125, '好')
+
+#小明的成绩从去年的72分提升到了今年的85分，请计算小明成绩提升的百分点，并用字符串格式化显示出'xx.x%'，只保留小数点后1位
+s1 = 72
+s2 = 85
+r = (s2-s1)/s1*100
+print(f'小明的成绩由去年的{s1}提升到了今年的{s2}，提升了{r:.1f}%')
+print('%.1f%%' % r)
+'{0:.1f}%'.format(r)
+
+#list&tuple练习
+L = [
+    ['Apple', 'Google', 'Microsoft'],
+    ['Java', 'Python', 'Ruby', 'PHP'],
+    ['Adam', 'Bart', 'Bob']
+]
+print(L[0][0])
+print(L[1][1])
+print(L[2][2])
+
+#条件判断&input
+weight = 80.5
+height = 1.75
+
+mbi = weight/(height**2)
+print (mbi)
+
+if mbi > 32:
+    print ('严重肥胖')
+elif mbi >= 28:
+    print('肥胖')
+elif mbi >= 25:
+    print('过重')
+elif mbi >= 18.5:
+    print('正常')
+else:
+    print('过轻')
+
+#循环
+L = ['Bart', 'Lisa', 'Adam']
+
+for name in L:
+    print(f'Hello, {name}')
+
+
